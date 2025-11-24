@@ -9,13 +9,13 @@ pipeline {
         DOCKERHUB_CRED = 'your-dockerhub-creds-id'
         
         // 2. Change 'yourusername/myapp' to your actual DockerHub username and desired repository name
-        IMAGE_NAME = 'yourusername/pavan-jenkins-app' 
+        IMAGE_NAME = 'pavanrajnikam/pavan-jenkins-app' 
         
         // 3. Automatically tags the image with the Jenkins build number (e.g., v1.1, v1.2)
         IMAGE_TAG = "v1.${BUILD_NUMBER}" 
         
         // 4. Update with your actual repository URL and branch
-        GIT_BRANCH = 'main' 
+        GIT_BRANCH = 'master' 
         GIT_URL = 'https://github.com/Pavan-rajn/Jenkins.git' 
     }
 
